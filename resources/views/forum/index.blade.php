@@ -3,7 +3,7 @@
     <div class="jumbotron">
         <div class="container">
             <h2>歡迎來到Laravel製作Blog!
-                <a class="btn btn-primary btn-lg pull-right" href="#" role="button" >發布新文章 »</a>
+                <a class="btn btn-primary btn-lg pull-right" role="button" href="/discussions/create">發布新文章 »</a>
             </h2>
 
         </div>
@@ -19,7 +19,7 @@
                             </a>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading"><a href="/discussion/{{$discussion->id}}">{{$discussion->title}}</a></h4>
+                            <h4 class="media-heading"><a href="/discussions/{{$discussion->id}}">{{$discussion->title}}</a></h4>
                             {{$discussion->user->name}}
                         </div>
                     </div>
